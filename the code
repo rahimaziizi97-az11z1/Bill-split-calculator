@@ -1,12 +1,12 @@
 print("Bill Split Calculator")  #Bill Split Calculator
 
-Bill_amount = float(input())  #100.0
-tip_percentage = float(input())  #5.0
-num_people = int(input())  #2
+Bill_amount = float(input())  #user inputs bill amount 
+tip_percentage = float(input())  #user inputs tip percentage
+num_people = int(input())  #user inputs amount of people 
 
-tip_amount = (tip_percentage/100) * bill_amount
-total_amount = Bill_amount = tip_amount
-amount_per_person = total_amount/ num_of_people
+tip_amount = (tip_percentage / 100) * bill_amount  #calculates the amount of the tip percentage
+total_amount = Bill_amount + tip_amount  # we use the bill_amount plus tip_amount to find total amount of the bill from everyonr first
+amount_per_person = total_amount / num_of_people  #we divide the total by how many people are there to know how much each person pays
 
-print(f"total (including tip): ${total_amount}")  #Total (including tip): $105.0
-print(f"each person pays: ${amount_per_person}")  #Each person pays :
+print(f"total (including tip): ${total_amount}")  #Total (including tip)
+print(f"each person pays: ${amount_per_person}")  #What each person has to pay
